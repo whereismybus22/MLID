@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Where is my Bus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Immediate redirection logic
+        const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+        if (!localStorage.getItem('login')) {
+            window.location = '/pages/login.html';
+        }
+        else if (isStandalone === false &&
+            !sessionStorage.getItem('pwaPageSkip')
+        ) {
+            window.location = '/pages/index.html';
+        } else if (
+            !localStorage.getItem('userDeviceLocation') &&
+            !sessionStorage.getItem('localAccessPagesSkip')
+        ) {
+            window.location = '/pages/location.html';
+        } else if (
+            !localStorage.getItem('isTutorialSeen') &&
+            !sessionStorage.getItem('tutorialPageSkip')
+        ) {
+            window.location = '/pages/tutorial.html';
+        } else if (!localStorage.getItem('defaultBusRoute')) {
+            window.location = '/pages/buses.html';
+        } else if (!localStorage.getItem('defaultBusStop')) {
+            window.location = '/pages/busstop.html';
+        } else {
+            window.location = '/' + localStorage.getItem('defaultBusRoute');
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        if (window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost') {
+            document.write('<script defer src="/_vercel/insights/script.js"><\/script>');
+        }
+    </script>
+</body>
+
+</html>

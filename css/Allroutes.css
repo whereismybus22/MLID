@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 16px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+.scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 5px;
+}
+
+.bus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 8px 8px;
+  margin-bottom: 5px;
+  gap: 8px;
+  width: 92%;
+  position: fixed;
+  top: 70px; 
+  z-index: 1000;
+}
+
+.search-icon,
+.clear-icon {
+  flex-shrink: 0;
+  cursor: pointer;
+  fill: #999;
+}
+
+#search {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Manrope',sans-serif;
+}
+
+.title {
+  font-weight: 700;
+  margin: 12px 0;
+  font-size: 24px;
+  font-family: 'Manrope',sans-serif;
+  position: sticky;      
+  background: white;    
+  padding: 8px 0;
+  color:#463c9d;
+  z-index: 10;
+  top: 100px;
+  padding-top: 10px;
+}
+
+.bus-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.bus-icon {
+  width: auto;
+  height: 24px;
+}
+
+.bus-text {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color:#000000;
+  font-family: "Manrope",sans-serif;
+  user-select: none; 
+}
+
+.bus-list {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 transparent; 
+}
+.bus-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bus-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.bus-list::-webkit-scrollbar-thumb {
+  background-color: #facc15;
+  border-radius: 4px;
+}
+.bus-item {
+      cursor: pointer;
+      transition: border 0.3s;
+}
+
+.bus-item.selected {
+      border: 2px solid #463c9d;
+      background-color: #f0f8ff;
+}
+.hidden {
+  display: none;
+}
