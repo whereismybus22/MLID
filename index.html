@@ -15,23 +15,27 @@
             !sessionStorage.getItem('pwaPageSkip')
         ) {
             window.location = '/pages/index.html';
-        } else if (
-            !localStorage.getItem('userDeviceLocation') &&
-            !sessionStorage.getItem('localAccessPagesSkip')
-        ) {
-            window.location = '/pages/location.html';
-        } else if (
-            !localStorage.getItem('isTutorialSeen') &&
-            !sessionStorage.getItem('tutorialPageSkip')
-        ) {
-            window.location = '/pages/tutorial.html';
-        } else if (!localStorage.getItem('defaultBusRoute')) {
-            window.location = '/pages/buses.html';
-        } else if (!localStorage.getItem('defaultBusStop')) {
-            window.location = '/pages/busstop.html';
-        } else {
-            window.location = '/' + localStorage.getItem('defaultBusRoute');
         }
+        else{
+            window.location = '/pages/notifications.html';
+        }
+        // else if (
+        //     !localStorage.getItem('userDeviceLocation') &&
+        //     !sessionStorage.getItem('localAccessPagesSkip')
+        // ) {
+        //     window.location = '/pages/location.html';
+        // } else if (
+        //     !localStorage.getItem('isTutorialSeen') &&
+        //     !sessionStorage.getItem('tutorialPageSkip')
+        // ) {
+        //     window.location = '/pages/tutorial.html';
+        // } else if (!localStorage.getItem('defaultBusRoute')) {
+        //     window.location = '/pages/buses.html';
+        // } else if (!localStorage.getItem('defaultBusStop')) {
+        //     window.location = '/pages/busstop.html';
+        // } else {
+        //     window.location = '/' + localStorage.getItem('defaultBusRoute');
+        // }
     </script>
 </head>
 
