@@ -21,13 +21,7 @@ const busRoutes = [
     ["route14", "Route 14"],
     ["route15", "Route 15"],
     ["route16", "Route 16"],
-    ["route17", "Route 17"],
-    ["route18", "Route 18"],
-    ["route19", "Route 19"],
-    ["route20", "Route 20"],
-    ["route21", "Route 21"],
-    ["route22", "Route 22"],
-    ["route23", "Route 23"]
+    ["route21", "Route 21"]
 
 ];
 
