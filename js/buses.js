@@ -32,7 +32,10 @@ const busRoutes = [
     ["route11", "Route 11"],
     ["route12", "Route 12"],
     ["route13", "Route 13"],
-    ["route14", "Route 14"]
+    ["route14", "Route 14"],
+    ["route15", "Route 15"],
+    ["route16", "Route 16"],
+    ["route21", "Route 21"]
 
 ];
 
