@@ -33,7 +33,7 @@ function sendContactForm(event) {
   const issue = issueSelect.options[issueSelect.selectedIndex].text;
   const description = document.getElementById("query").value.trim();
   const os = getMobileOS();
-  const college = "HITAM College";
+  const college = "MLRIT College";
   const subject = issue;
   const body = 'College : ' + college + '\n' +
                'Mobile OS : ' + os + '\n' +

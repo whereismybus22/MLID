@@ -402,13 +402,7 @@
             bus14: null,
             bus15: null,
             bus16: null,
-            bus17: null,
-            bus18: null,
-            bus19: null,
-            bus20: null,
-            bus21: null,
-            bus22: null,
-            bus23: null
+            bus21: null
         };
 
         let deviceLocationMarker;
@@ -459,31 +453,24 @@
                 const data = await response.json();
 
                 const busData = {
-                    bus1: filterBusData(data, 1357),
-                    bus2: filterBusData(data, 1358),
-                    bus3: filterBusData(data, 1359),
-                    bus4: filterBusData(data, 1360),
-                    bus5: filterBusData(data, 1361),
-                    bus6: filterBusData(data, 1362),
-                    bus7: filterBusData(data, 1363),
-                    bus8: filterBusData(data, 1364),
-                    bus9: filterBusData(data, 1365),
-                    bus10: filterBusData(data, 1366),
-                    bus11: filterBusData(data, 1367),
-                    bus12: filterBusData(data, 1368),
-                    bus13: filterBusData(data, 1369),
-                    bus14: filterBusData(data, 1370),
-                    bus15: filterBusData(data, 1371),
-                    bus16: filterBusData(data, 1372),
-                    bus17: filterBusData(data, 1373),
-                    bus18: filterBusData(data, 1374),
-                    bus19: filterBusData(data, 1375),
-                    bus20: filterBusData(data, 1376),
-                    bus21: filterBusData(data, 1377),
-                    bus22: filterBusData(data, 1378),
-                    bus23: filterBusData(data, 1379)
+                    bus1:  filterBusData(data, 459),
+                    bus2:  filterBusData(data, 450),
+                    bus3:  filterBusData(data, 1545),
+                    bus4:  filterBusData(data, 1546),
+                    bus5:  filterBusData(data, 1547),
+                    bus6:  filterBusData(data, 1548),
+                    bus7:  filterBusData(data, 1549),
+                    bus8:  filterBusData(data, 1550),
+                    bus9:  filterBusData(data, 1551),
+                    bus10: filterBusData(data, 1552),
+                    bus11: filterBusData(data, 1553),
+                    bus12: filterBusData(data, 1554),
+                    bus13: filterBusData(data, 1555),
+                    bus14: filterBusData(data, 1556),
+                    bus15: filterBusData(data, 1557),
+                    bus16: filterBusData(data, 1558),
+                    bus21: filterBusData(data, 477)
                 };
-
 
                 updateBusMarkers(busData);
 
@@ -499,7 +486,7 @@
         }
 
         function filterBusData(data, itemId) {
-            const mlrInstitute = data.find((entry) => entry.title === "ao@hitam.org");
+            const mlrInstitute = data.find((entry) => entry.title === "ao@mlrinstitutions.ac.in");
             if (!mlrInstitute) return null;
 
             const item = mlrInstitute.items.find((item) => item.id === itemId);
@@ -581,13 +568,7 @@
                 bus14: '/img/fourteen.png',
                 bus15: '/img/fifteen.png',
                 bus16: '/img/sixteen.png',
-                bus17: '/img/seventeen.png',
-                bus18: '/img/eighteen.png',
-                bus19: '/img/nineteen.png',
-                bus20: '/img/twenty.png',
                 bus21: '/img/twentyone.svg',
-                bus22: '/img/twentytwo.png',
-                bus23: '/img/twentythree.png',
             };
 
 

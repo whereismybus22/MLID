@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const incharges = [
-        { name: "Incharge 1", description: "Administrative Officer", phone: "tel:9052223769", whatsapp: "https://wa.me/9052223769" }
+        { name: "Incharge 1", description: "Nirmith Kumar", phone: "tel:9959984365", whatsapp: "https://wa.me/9959984365" }
     ];
 
     const drivers = [
